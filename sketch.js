@@ -28,13 +28,12 @@ function setup() {
   fill(bkgrdColor);
   textAlign(CENTER);
   textSize(fontSize);
-  noStroke();
 
   strokeWeight(2);
 
   walking = createVideo(['assets/walking.mov', 'assets/walking.webm']);
   walking.volume(0);
-  //walking.hide();
+  walking.hide();
 }
 
 function draw() {
@@ -43,6 +42,7 @@ function draw() {
 
   spreadingBranches();
 
+  noStroke();
   text('This trail has begun construction', width/2, height/4);
   text('Come back later for the grand opening', width/2, height/1.25);
 
