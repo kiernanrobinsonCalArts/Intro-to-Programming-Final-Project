@@ -13,7 +13,7 @@ var music;
 var font,
   fontSize = 50;
 
-var bkgrdColor = 255;
+var bkgrdColor = 0;
 
 function preload() {
   soundFormats('wav');
