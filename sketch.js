@@ -28,12 +28,13 @@ function setup() {
   fill(bkgrdColor);
   textAlign(CENTER);
   textSize(fontSize);
+  noStroke();
 
   strokeWeight(2);
 
   walking = createVideo(['assets/walking.mov', 'assets/walking.webm']);
   walking.volume(0);
-  walking.hide();
+  //walking.hide();
 }
 
 function draw() {
